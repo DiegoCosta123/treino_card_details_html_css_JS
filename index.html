@@ -8,45 +8,81 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@200&family=Lexend+Deca:wght@200;300&family=Manrope:wght@700;800&family=Montserrat:wght@500&family=Open+Sans:wght@400;700&family=Outfit:wght@700&family=Poppins:wght@600&family=Red+Hat+Display:wght@700&family=Roboto:wght@300&family=Space+Grotesk:wght@500&family=Titillium+Web&display=swap" rel="stylesheet">
+        <link 
+        href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@200&family=Lexend+Deca:wght@200;300&family=Manrope:wght@700;800&family=Montserrat:wght@500&family=Open+Sans:wght@400;700&family=Outfit:wght@700&family=Poppins:wght@600&family=Red+Hat+Display:wght@700&family=Roboto:wght@300&family=Space+Grotesk:wght@500&family=Titillium+Web&display=swap" 
+        rel="stylesheet"/>
 
         <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
         <div id="project_container">
-            <div id="card">
-                <div class="cardImg">
-                    <img src="images/bg-main-desktop.png"/>
+            <div id="card_main">
 
-                    <div class="cardFront">
-                        <img src="images/bg-card-front.png"/>
+                <div id="card">
+                    <div class="cardImg">
+                        <img id="img_main" src="images/bg-main-desktop.png"/>
+                        <div class="cardFront">
+                            <img id="img_card_front" src="images/bg-card-front.png"/>
+                            <div class="title_code">
+                                <img class="img_logo" src="images/card-logo.svg"/>
 
-                        <div class="title_code">
+                                <div class="number_card">
+                                    <h1 class="code_content">9591 6489 6389 101E</h1>
+                                </div>
 
-                            <img class="img_logo" src="images/card-logo.svg" alt="">
-
-                            <h1 class="code_content">0000 0000 0000 0000</h1>
-                            <p class="name_content">Jane Appleseed <span class="valid_content">00/00</span></p>
-
+                                <div class="paragraph_valid">
+                                    <p class="name_content">Felicia Leire <span class="valid_content">00/00</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardBack">
+                            <img id="img_card_back" src="images/bg-card-back.png"/>
+                            <p id="secret">000</p>
                         </div>
                     </div>
+                </div>
 
-                    <div class="cardBack">
-                        <img src="images/bg-card-back.png"/>
-                        <p id="secret">000</p>
-                    </div>
-
-                    <div>
-                        <div class="squared">
-                            Teste
+                <div id="teste1">
+                    <div id="payment_account">
+                        <div id="campTypePayment">
+                            <div class="payment_name">
+                                <p class="title_name">Cardholder name</p>
+                                <input type="text" id="text_name" placeholder="Digite nome do seu cartão"/>
+                            </div>
+                            <div class="card_number">
+                                <p class="title_card">Card Number</p>
+                                <input type="number" id="number_card" placeholder="Digite um número do seu cartão"/>
+                            </div>
                         </div>
+                        <div id="campCardValid">
+                            <p id="title_id_card">exp.date (mm/yy)<span class="cvc_content">cvc</span></p>
+                            <input id="month" type="number" placeholder="mm">
+                            <input id="year" type="number" placeholder="yy">
+                            <input id="code_verification_card" type="number" placeholder="e.g.123">
+                        </div>
+                        <button id="button_conf">Confirm</button>
                     </div>
-
+                    
+                    <div id="approved_payment">
+                        <div class="icon_content">
+                            <img src="images/icon-complete.svg"/>
+                        </div>
+                        <div class="message_content">
+                            <div class="message_approved">
+                                <h1 class="title_approved">Thank You!</h1>
+                                <p class="paragraph_card">We've added your card details</p>
+                            </div>
+                        </div>
+                        <button id="button_content">Continue</button>
+                    </div>
+                    
                 </div>
             </div>
+
         </div>
 
         <script src="myScript.js"></script>
     </body>
 </html>
+
