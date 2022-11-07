@@ -10,9 +10,6 @@ const numMonth = document.getElementById("month");
 const numYear = document.getElementById("year");
 const cvc = document.getElementById("code_verification_card");
 
-// const typePayment = document.getElementById("campTypePayment");
-// const cardValid = document.getElementById("campCardValid");
-
 buttonPayment.addEventListener("click", () => {
 
 

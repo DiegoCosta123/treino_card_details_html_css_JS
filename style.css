@@ -272,16 +272,11 @@
     border: none;
 }
 
-#teste {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
+/* RESPONSIVIDADE */
 @media screen and (max-width: 1262px) {
     #payment_account {
         margin-right: 20px;
-    }    
+    }
 }
 
 @media screen and (max-width: 1180px) {
@@ -315,7 +310,7 @@
         z-index: 100;
     }
 
-    #teste1 {
+    #card_identity {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -337,7 +332,43 @@
     }
 
     #approved_payment {
-        margin-right: 0;
+        margin-right: 00px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #text_responsive {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    #text_responsive {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 462px) {
+    #text_responsive {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 419px) {
+    #text_responsive {
+        font-size: 5px;
+    }
+
+    .img_logo {
+        width: 25%;
+        height: 25%;
+    }
+
+}
+
+@media screen and (max-width: 359px) {
+    .code_content {
+        bottom: 45px;
     }
 }
 
