@@ -17,7 +17,7 @@
 
     <body>
         <div id="project_container">
-            <div id="card_main">
+            <form id="card_main">
 
                 <div id="card">
                     <div class="cardImg">
@@ -33,7 +33,13 @@
                                     </div>
 
                                     <div class="paragraph_valid">
-                                        <p class="name_content">Felicia Leire <span class="valid_content">00/00</span></p>
+                                        <span class="name_content">Felicia Leire</span>
+                                        <span id="date_valid">
+                                            <span class="valid_content">00</span>
+                                            /
+                                            <span class="valid_content">00</span>
+
+                                        </span>
                                     </div>
 
                                 </div>
@@ -49,23 +55,43 @@
 
                 <div id="card_identity">
                     <div id="payment_account">
+
                         <div id="campTypePayment">
-                            <div class="payment_name">
-                                <p class="title_name">Cardholder name</p>
-                                <input type="text" id="text_name" placeholder="Digite nome do seu cartão"/>
+
+                            <div id="payment_name">
+                                <label id="title_name">Cardholder name</label>
+                                <div><input required type="text" id="text_name" placeholder="Digite nome do seu cartão"/></div>
+                                <label id="mandatory_name_field"> Campo obrigatório</label>
                             </div>
-                            <div class="card_number">
-                                <p class="title_card">Card Number</p>
-                                <input type="number" id="number_card" placeholder="Digite um número do seu cartão"/>
+
+                            <div id="card_number">
+                                <label class="title_card">Card Number</label>
+                                <div><input required type="number" id="number_card" placeholder="Digite um número do seu cartão"/></div>
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <div id="campCardValid">
+                                
+                                <div class="card_valid">
+                                    <label id="title_id_card">exp.date</label>
+                                    <input required id="month" type="number" placeholder="mm">
+                                </div>
+
+                                <div class="card_valid">
+                                    <label id="title_id_card">(mm/yy)</label>
+                                    <input required id="year" type="number" placeholder="yy">
+                                </div>
+
+                                <div class="card_valid">
+                                    <label class="cvc_content">cvc</label>
+                                    <input required id="code_verification_card" type="number" placeholder="e.g.123">
+                                </div>
+
                             </div>
                         </div>
-                        <div id="campCardValid">
-                            <p id="title_id_card">exp.date (mm/yy)<span class="cvc_content">cvc</span></p>
-                            <input id="month" type="number" placeholder="mm">
-                            <input id="year" type="number" placeholder="yy">
-                            <input id="code_verification_card" type="number" placeholder="e.g.123">
-                        </div>
-                        <button id="button_conf">Confirm</button>
+                        <button type="submit" id="button_conf">Confirm</button>
                     </div>
                     
                     <div id="approved_payment">
@@ -82,7 +108,7 @@
                     </div>
                     
                 </div>
-            </div>
+            </form>
 
         </div>
 

@@ -10,6 +10,8 @@ const numMonth = document.getElementById("month");
 const numYear = document.getElementById("year");
 const cvc = document.getElementById("code_verification_card");
 
+const error = document.getElementById("mandatory_name_field");
+
 buttonPayment.addEventListener("click", () => {
 
 
@@ -24,9 +26,7 @@ buttonPayment.addEventListener("click", () => {
         else {
             payment.style.display = "grid";
         }
-        console.log("Teste1");
     }
-
 
     buttonApproved.addEventListener("click", () => {
         if (approved) {
