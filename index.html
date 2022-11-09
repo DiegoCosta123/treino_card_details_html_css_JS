@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Card details</title>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -61,12 +61,15 @@
                             <div id="payment_name">
                                 <label id="title_name">Cardholder name</label>
                                 <div><input required type="text" id="text_name" placeholder="Digite nome do seu cartão"/></div>
-                                <label id="mandatory_name_field"> Campo obrigatório</label>
+                                <span class="requiredField error-name"></span>
+                                
+                                                                
                             </div>
 
                             <div id="card_number">
                                 <label class="title_card">Card Number</label>
                                 <div><input required type="number" id="number_card" placeholder="Digite um número do seu cartão"/></div>
+                                <span class="requiredField error-card-number"></span>
                             </div>
 
                         </div>
@@ -76,17 +79,20 @@
                                 
                                 <div class="card_valid">
                                     <label id="title_id_card">exp.date</label>
-                                    <input required id="month" type="number" placeholder="mm">
+                                    <div><input required id="month" type="number" placeholder="mm"></div>
+                                    <span class="requiredField error-card-month"></span>
                                 </div>
 
                                 <div class="card_valid">
                                     <label id="title_id_card">(mm/yy)</label>
-                                    <input required id="year" type="number" placeholder="yy">
+                                    <div><input required id="year" type="number" placeholder="yy"></div>
+                                    <span class="requiredField error-card-year"></span>
                                 </div>
 
                                 <div class="card_valid">
                                     <label class="cvc_content">cvc</label>
-                                    <input required id="code_verification_card" type="number" placeholder="e.g.123">
+                                    <div><input required id="code_verification_card" type="number" placeholder="e.g.123"></div>
+                                    <span class="requiredFieldCvc error-card-cvc"></span>
                                 </div>
 
                             </div>
