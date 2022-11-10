@@ -292,11 +292,6 @@
 }
 
 /* ERROS */
-
-/* .error_message{
-    gap: 0;
-} */
-
 .error_message::after{
     content: "cant't be blank";
     color: hsl(0, 100%, 66%);
@@ -323,19 +318,18 @@
 /* RESPONSIVIDADE */
 @media screen and (max-width: 1262px) {
     #payment_account {
-        margin-right: 20px;
+        margin-right: 0px;
     }
 }
 
 @media screen and (max-width: 1180px) {
 
     #project_container {
-        display: block;
+        /* width: 107%; */
+        word-break: break-word;
     }
 
     #card_main {
-        width: 100%;
-        height: 100%;
         display: block;
     }
 
@@ -362,11 +356,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: 25px auto;
+        margin: 100px 0 25px 0;
+        word-wrap: break-word;
     }
 
     .card_valid {
@@ -381,6 +372,12 @@
 }
 
 @media screen and (max-width: 770px) {
+
+    #project_container {
+        /* width: 107%; */
+        word-break: break-word;
+    }
+
     .cardFront {
         margin-left: -45px;
     }
@@ -391,6 +388,7 @@
 
     #approved_payment {
         margin-right: 00px;
+        margin-top: 70px;
     }
 }
 
